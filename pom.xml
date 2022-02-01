@@ -34,6 +34,7 @@
 				<extensions>true</extensions>
 				<configuration>
 					<cloudHubDeployment>
+						<uri>https://anypoint.mulesoft.com</uri>
 						<username>omish021996</username>
 						<environment>Sandbox</environment>
 						<workers>1</workers>
@@ -41,11 +42,14 @@
 						<applicationName>world-timezone-api</applicationName>
 						<password>Lifeb@y2</password>
 						<muleVersion>4.4.0</muleVersion>
+						<objectStoreV2>true</objectStoreV2>
+						<businessGroup>ABC</businessGroup>
 						<properties>
 							<anypoint.platform.config.analytics.agent.enabled>true</anypoint.platform.config.analytics.agent.enabled>
 							<anypoint.platform.client_id>17e1d87ce3694546b1cc26e6207b8d85</anypoint.platform.client_id>
 							<anypoint.platform.client_secret>2cf059735CCb49fdB730f4D954fe4D0d</anypoint.platform.client_secret>
 						</properties>
+						<skipDeploymentVerification>true</skipDeploymentVerification>
 					</cloudHubDeployment>
 				</configuration>
 			</plugin>
