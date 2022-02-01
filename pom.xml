@@ -49,6 +49,7 @@
 							<anypoint.platform.client_id>17e1d87ce3694546b1cc26e6207b8d85</anypoint.platform.client_id>
 							<anypoint.platform.client_secret>2cf059735CCb49fdB730f4D954fe4D0d</anypoint.platform.client_secret>
 						</properties>
+						
 						<skipDeploymentVerification>true</skipDeploymentVerification>
 					</cloudHubDeployment>
 				</configuration>
