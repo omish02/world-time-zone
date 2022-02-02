@@ -14,7 +14,7 @@ pipeline
         { 
             steps
             {
-                // 
+                sh 'Test Passed' 
             }
         }
         stage('Deploy')
