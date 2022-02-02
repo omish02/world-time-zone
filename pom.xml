@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.mycompany</groupId>
@@ -35,21 +37,26 @@
 				<configuration>
 					<cloudHubDeployment>
 						<uri>https://anypoint.mulesoft.com</uri>
+						<muleVersion>4.4.0</muleVersion>
 						<username>omish021996</username>
+						<password>${ap.password}</password>
+						<applicationName>world-timezone-api</applicationName>
 						<environment>Sandbox</environment>
 						<workers>1</workers>
-						<workerType>Micro</workerType>
-						<applicationName>world-timezone-api</applicationName>
-						<password>Lifeb@y2</password>
-						<muleVersion>4.4.0</muleVersion>
-						<objectStoreV2>true</objectStoreV2>
-						<businessGroup>ABC</businessGroup>
+						<workerType>MICRO</workerType>
+						<businessGroupId>${ap.orgId}</businessGroupId>
+						<server>exchange-server</server>
+
 						<properties>
 							<anypoint.platform.config.analytics.agent.enabled>true</anypoint.platform.config.analytics.agent.enabled>
-							<anypoint.platform.client_id>17e1d87ce3694546b1cc26e6207b8d85</anypoint.platform.client_id>
-							<anypoint.platform.client_secret>2cf059735CCb49fdB730f4D954fe4D0d</anypoint.platform.client_secret>
+							<anypoint.platform.client_id>${ap.client_id}</anypoint.platform.client_id>
+							<anypoint.platform.client_secret>${ap.client_secret}</anypoint.platform.client_secret>
 						</properties>
-						
+
+						<objectStoreV2>true</objectStoreV2>
+						<businessGroup>ABC</businessGroup>
+
+
 						<skipDeploymentVerification>true</skipDeploymentVerification>
 					</cloudHubDeployment>
 				</configuration>

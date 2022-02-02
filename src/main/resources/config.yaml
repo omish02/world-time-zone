@@ -1,0 +1,8 @@
+http:
+  host: localhost
+  port: "8081"
+ap:
+  client_id: "17e1d87ce3694546b1cc26e6207b8d85"
+  client_secret: "2cf059735CCb49fdB730f4D954fe4D0d"
+  password: "Lifeb@y2"
+  orgId: "23c60b9c-803a-451e-8e47-34fdcc29119d"
