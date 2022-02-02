@@ -47,7 +47,6 @@
 						<region>${region}</region>
 						<workers>${workers}</workers>
 						<objectStoreV2>${objectStoreV2}</objectStoreV2>
-						
 						<properties>
 							<anypoint.platform.analytics_base_uri>https://analytics-ingest.anypoint.mulesoft.com/</anypoint.platform.analytics_base_uri>
 							<anypoint.platform.client_id>17e1d87ce3694546b1cc26e6207b8d85}</anypoint.platform.client_id>
