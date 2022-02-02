@@ -37,25 +37,23 @@
 				<configuration>
 					<cloudHubDeployment>
 						<uri>https://anypoint.mulesoft.com</uri>
-						<muleVersion>4.4.0</muleVersion>
-						<username>omish021996</username>
-						<password>${ap.password}</password>
-						<applicationName>world-timezone-api</applicationName>
-						<environment>Sandbox</environment>
-						<workers>1</workers>
-						<workerType>MICRO</workerType>
-						<businessGroupId>${ap.orgId}</businessGroupId>
+						<muleVersion>${mule.version}</muleVersion>
+						<username>${anypoint.username}</username>
+						<password>${anypoint.password}</password>
+						<applicationName>${cloudhub.app}</applicationName>
+						<environment>${cloudhub.environment}</environment>
+						<businessGroup>${cloudhub.bg}</businessGroup>
+						<workerType>${cloudhub.worker}</workerType>
+						<region>${region}</region>
+						<workers>${workers}</workers>
+						<objectStoreV2>${objectStoreV2}</objectStoreV2>
 						<properties>
-							<anypoint.platform.config.analytics.agent.enabled>true</anypoint.platform.config.analytics.agent.enabled>
-							<anypoint.platform.client_id>${ap.client_id}</anypoint.platform.client_id>
-							<anypoint.platform.client_secret>${ap.client_secret}</anypoint.platform.client_secret>
+							<anypoint.platform.analytics_base_uri>https://analytics-ingest.anypoint.mulesoft.com/</anypoint.platform.analytics_base_uri>
+							<anypoint.platform.client_id>17e1d87ce3694546b1cc26e6207b8d85}</anypoint.platform.client_id>
+							<anypoint.platform.client_secret>2cf059735CCb49fdB730f4D954fe4D0d</anypoint.platform.client_secret>
+							<anypoint.platform.base_uri>https://anypoint.mulesoft.com/</anypoint.platform.base_uri>
 						</properties>
-
-						<objectStoreV2>true</objectStoreV2>
-						<businessGroup>ABC</businessGroup>
-
-
-						<skipDeploymentVerification>true</skipDeploymentVerification>
+						
 					</cloudHubDeployment>
 				</configuration>
 			</plugin>
