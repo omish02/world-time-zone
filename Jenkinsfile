@@ -10,13 +10,6 @@ pipeline
                 bat 'mvn clean install'
             }
         }
-        stage('Test')
-        { 
-            steps
-            {
-                sh 'Test Passed' 
-            }
-        }
         stage('Deploy')
         { 
             steps
