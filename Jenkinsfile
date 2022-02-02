@@ -10,6 +10,13 @@ pipeline
                 bat 'mvn clean install'
             }
         }
+        stage('Munit Test')
+        { 
+            steps
+            {
+                bat 'mvn test'
+            }
+        }
         stage('Deploy')
         { 
             steps
